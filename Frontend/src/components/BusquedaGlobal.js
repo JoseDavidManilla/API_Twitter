@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from 'axios'
 
-export default class Createtweet extends Component {
+export default class BusquedaGlobal extends Component {
         state = {
             tweet: [],
             busqueda: ''

@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
     "bootstrap": "^5.1.1",
+    "concurrently": "^6.2.1",
     "dotenv": "^10.0.0",
     "glyphicons": "^0.2.0",
     "node-fetch": "^3.0.0",

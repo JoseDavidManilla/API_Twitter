@@ -1,10 +1,10 @@
-const { findRecentTweets, findTweetsByWord, findTweetsById} = require('./repositorio');
+const { findRecentTweets, findTweetsByWord, findTweetsByuser} = require('./repositorio');
 
 async function searchRecentTweets() {
     return await findRecentTweets();
 }
-async function searchRecentTweetId() {
-    return await  findTweetsById();
+async function searchRecentTweetuser(word) {
+    return await  findTweetsByuser(word);
 }
 
 async function searchTweetsByWord(word) {
@@ -12,5 +12,5 @@ async function searchTweetsByWord(word) {
 }
 
 module.exports = {
-    searchRecentTweets, searchTweetsByWord,searchRecentTweetId
+    searchRecentTweets, searchTweetsByWord,searchRecentTweetuser
 }

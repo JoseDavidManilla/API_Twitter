@@ -12,9 +12,9 @@ router.get('/recent', async(req, res) => {
         return res.status(500).json(e.message);
     }
 });
-router.get('/Tw', async(req, res) => {
+router.get('/Twrecent/:word', async(req, res) => {
     try {
-        const data = await Tweets.searchRecentTweetId();
+        const data = await Tweets.searchRecentTweetuser(req.params.word);
         return res.status(200).json(data);
     }
     catch(e) {
