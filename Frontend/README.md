@@ -32,7 +32,14 @@ Twit: Cliente API de Twitter para nodo, Admite REST y API de transmisión .
 Axios: es un cliente HTTP basado en promesas simples para el navegador y node.js. Axios proporciona una biblioteca fácil de usar en un paquete pequeño con una interfaz muy extensible.
 
 ## Ejecucion del proyecto tanto backend como frontend:
-
+Para realizar la ejecucion del proyecto es necesario:
+1.- Instalar npm install concurrently --save del lado del servidor(Backend)
+2.- Hacer la peticion desde el script del package.json del servidor(Backend)
+    "start": "concurrently \"npm run server\" \"cd ../frontend && npm start\"",
+    "server":"nodemon index.js"
+3.- Desde el Backend hacemos la peticion para correr backend y frontend:
+    npm start 
+Esto permite que inicien tanto servidor como cliente al mismo tiempo.
 
 
 

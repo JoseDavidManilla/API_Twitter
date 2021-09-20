@@ -5,14 +5,14 @@ import './App.css';
 
 import Createtweet from './components/Createtweet';
 import BusquedaGlobal from './components/BusquedaGlobal';
-import BusquedaUSuario from './components/config'
+//import BusquedaUSuario from './components/config'
+//<Route path="/Users" component={BusquedaUSuario}/>
 function App() {
   return (
       <Router>
       <div className="container p-4">
       <Route path="/Tweets" component={Createtweet}/>
       <Route path="/Search" component={BusquedaGlobal}/>
-      <Route path="/Users" component={BusquedaUSuario}/>
       </div>
     </Router>
   );

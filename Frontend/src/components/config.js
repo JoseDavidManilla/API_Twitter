@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from 'axios'
-
+/*
+Cofig(): es metodo de prueba para reunir ambos endpoinst en uno solo:
+El correcto es BuquedaGlobal
 export default class config extends Component {
         state = {
             tweet: [],
@@ -101,3 +103,4 @@ export default class config extends Component {
         );
     }
 }
+*/
