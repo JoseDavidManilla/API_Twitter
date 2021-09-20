@@ -8,10 +8,6 @@ Utilice Iniciar sesión con Twitter, también conocido como Iniciar sesión con 
 - Disponible para: 
 Navegadores: si sus usuarios pueden acceder a un navegador, puede integrarlo con Iniciar sesión con Twitter. Obtenga más información sobre el flujo de inicio de sesión del navegador.
 ## La estructura para acceso a la app debe ser la siguiente:
-CONSUMER_KEY="###"
-CONSUMER_SECRET="###"
-ACCESS_TOKEN="###"
-ACCESS_TOKEN_SECRET="###"
 Esta informacion la obtenemos de la app creada en la API de Twitter.
 Visite la API de Twitter y complete el formulario. Cuando termine, haga clic en la pestaña Claves y tokens de acceso para ver su clave / secreto de consumidor y clave / secreto del token de acceso. Copie estas claves / secretos en su archivo config.js.
 ## End points:
@@ -30,6 +26,8 @@ Throw: La sentencia throw se utiliza para lanzar explícitamente una excepción.
 Twit: Cliente API de Twitter para nodo, Admite REST y API de transmisión .
 
 Axios: es un cliente HTTP basado en promesas simples para el navegador y node.js. Axios proporciona una biblioteca fácil de usar en un paquete pequeño con una interfaz muy extensible.
+
+Bootstrap: Nuestro paquete. json incluye métodos convenientes para trabajar con el marco, incluida la compilación de código, la ejecución de pruebas y más. Para usar nuestro sistema de compilación y ejecutar nuestra documentación localmente, necesitará una copia de los archivos fuente de Bootstrap con el fin de permitir dar diseño en este caso dar diseño a diversas etiquetas como div permitiendo agrupar varios elementos de bloque (párrafos, encabezados, listas, divisiones, etc).
 
 ## Ejecucion del proyecto tanto backend como frontend:
 Para realizar la ejecucion del proyecto es necesario:
