@@ -9,8 +9,8 @@ export default class BusquedaGlobal extends Component {
     }
 
 async componentDidMount(){
-   this.getBuscarGlobal()
-   this.getBuscarUsuarios()
+   //this.getBuscarGlobal()
+   //this.getBuscarUsuarios()
 }
 
 getBuscarGlobal =  async (word) => {
@@ -57,19 +57,22 @@ render() {
             </div>
             </div>
             <br></br>
-            <center><h5>TweetRecent</h5></center>
+            <center><h5>Tweets publicos recientes</h5></center>
             <div className="row">
             {
                     this.state.tweet.map(user =>(
                 <div className="col-md-4 p-2">
                 <div className="card text-white bg-secondary mb-3">
                     <div className="card-header d-flex justify-content-between" key={user.id_str}>
-                        <h5>{user.user.name}</h5>
+                        <h5>Publicacion: {user.user.name}</h5>
                     </div>
                     <div className="card-body">
-                    <p>{user.full_text}</p>
-                    <p>{user.user.description}</p>
+                    <p>Contenido:{user.full_text}</p>
+                    <p>Descripcion: {user.user.description}</p>
                     </div>
+                    <div className="card-footer">
+                    <p>Lugar: {user.user.location}</p>
+                            </div>
                 </div>
 
             </div>
@@ -77,20 +80,23 @@ render() {
                 }
             </div>
             <br></br>
-            <center><h5>TweetUsers</h5></center>
+            <center><h5>Usuarios</h5></center>
             <div className="row">
             {
                     this.state.tweet2.map(user2 =>(
                 <div className="col-md-4 p-2">
                 <div className="card text-white bg-success mb-3">
                     <div className="card-header d-flex justify-content-between" key={user2.id_str}>
-                    <h5>{user2.name}</h5><br></br>
-                        <h4>{user2.screen_name}</h4>
+                    <h5>Usuario:{user2.name}</h5>
                     </div>
                     <div className="card-body">
+                    <h7>Name: {user2.screen_name}</h7>
                     <p>{user2.full_text}</p>
-                    <p>{user2.description}</p>
+                    <p>Descripcion: {user2.description}</p>
                     </div>
+                    <div className="card-footer">
+                    <p>Id_user: {user2.id_str}</p>
+                            </div>
                 </div>
 
             </div>
